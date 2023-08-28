@@ -1,0 +1,368 @@
+lang=bcc: آ1
+bcc-Latn-x-com: 1
+Definitions: ['that; those', 'he; she; they; it']
+
+
+lang=bcc: آ2
+bcc-Latn-x-com: 2
+Definitions: ['an interjection used to express disbelief or surprise']
+
+
+lang=bcc: آ دِگَه
+bcc-Latn-x-com: á dega
+Definitions: ['the rest; the others']
+
+
+lang=bcc: آآ
+bcc-Latn-x-com: áá
+Definitions: ['an interjection used to call domesticated birds like chickens, ducks or pigeons.']
+
+
+lang=bcc: آب1
+bcc-Latn-x-com: 1
+Definitions: ['letter; character; any of the symbols of an alphabet']
+
+
+lang=bcc: آباد
+bcc-Latn-x-com: ábád
+Definitions: ['cultivated', 'inhabited; populated', 'prosperous; rich', '(of a land) green; covered with natural vegetation after rains or in spring', '(of animals) fat and healthy']
+
+
+lang=bcc: آبادکار
+bcc-Latn-x-com: ábádkár
+Definitions: ['settler', 'cultivator; cultivator of a wasteland']
+
+
+lang=bcc: آبادکاری
+bcc-Latn-x-com: ábádkári
+Definitions: ['inhabitation', 'cultivation']
+
+
+lang=bcc: آبادی
+bcc-Latn-x-com: ábádi
+Definitions: ['settlement; village; town', 'population', 'prosperity; bonanza', 'healthiness; well-being']
+
+
+lang=bcc: آباز
+bcc-Latn-x-com: ábáz
+Definitions: ['swimmer']
+
+
+lang=bcc: آبازی
+bcc-Latn-x-com: ábázi
+Definitions: ['swimming', 'tempering; tempering of a sword or knife etc.']
+
+
+lang=bcc: آبِدان
+bcc-Latn-x-com: ábedán
+Definitions: ['thriving; flourishing', 'prosperous', 'cultivated']
+
+
+lang=bcc: آبِدانی
+bcc-Latn-x-com: ábedáni
+Definitions: ['prosperity', 'cultivation']
+
+
+lang=bcc: آبرُگ
+bcc-Latn-x-com: ábrog
+Definitions: ['envy']
+
+
+lang=bcc: آبرُگی
+bcc-Latn-x-com: ábrogi
+Definitions: ['envious']
+
+
+lang=bcc: آبرو
+bcc-Latn-x-com: ábru
+Definitions: ['dignity; honour; reputation']
+
+
+lang=bcc: آبرودار
+bcc-Latn-x-com: ábrudár
+Definitions: []
+
+
+lang=bcc: آبرێشُم
+bcc-Latn-x-com: ábréshom
+Definitions: ['silk']
+
+
+lang=bcc: آبرێشُمی
+bcc-Latn-x-com: ábréshomi
+Definitions: ['silky; silken; made of silk']
+
+
+lang=bcc: آبلَه
+bcc-Latn-x-com: áblah
+Definitions: ['blister']
+
+
+lang=bcc: آبنوس
+bcc-Latn-x-com: ábnus
+Definitions: ['ebony']
+
+
+lang=bcc: آبنوسی
+bcc-Latn-x-com: ábnusi
+Definitions: ['made of ebony', 'like ebony; hard or black like ebony']
+
+
+lang=bcc: آبێنک
+bcc-Latn-x-com: ábénk
+Definitions: ['alphabet']
+
+
+lang=bcc: آپ
+bcc-Latn-x-com: áp
+Definitions: ['water', 'watery', 'melted', 'honour', 'temper; temper of a metal']
+
+
+lang=bcc: آپ‌ کَپتَگ
+bcc-Latn-x-com: áp kaptag
+Definitions: ['dishonourable; shameless; disgraceful']
+
+
+lang=bcc: آپ و تام
+bcc-Latn-x-com: áp o tám
+Definitions: ['refreshment; food and drink']
+
+
+lang=bcc: آپبَند1
+bcc-Latn-x-com: 1
+Definitions: ['freezing; very cold']
+
+
+lang=bcc: آپبَند2
+bcc-Latn-x-com: 2
+Definitions: ['waterproof']
+
+
+lang=bcc: آپبَندی
+bcc-Latn-x-com: ápbandi
+Definitions: ['the act of watering crops']
+
+
+lang=bcc: آپَت
+bcc-Latn-x-com: ápat
+Definitions: ['calamity; misfortune; incident', 'giant; huge']
+
+
+lang=bcc: آپتابَه
+bcc-Latn-x-com: áptábah
+Definitions: ['tankard; pitcher']
+
+
+lang=bcc: آپتَرّ
+bcc-Latn-x-com: áptarr
+Definitions: ['whirlpool; eddy', '(in collective farming) a farmer’s turn to take control of the water']
+
+
+lang=bcc: آپجاه
+bcc-Latn-x-com: ápjáh
+Definitions: ['the place where water is found or remains']
+
+
+lang=bcc: آپجَلّ
+bcc-Latn-x-com: ápjall
+Definitions: ['shallow ground where rainwater stays; rainwater pond']
+
+
+lang=bcc: آپدار
+bcc-Latn-x-com: ápdár
+Definitions: ['juicy (of fruit, vegetables etc.)', 'fertile (soil)', 'respectable; honourable', 'tempered (of a sword, knife etc.)']
+
+
+lang=bcc: آپدارکاه
+bcc-Latn-x-com: ápdárkáh
+Definitions: ['a grass']
+
+
+lang=bcc: آپداری
+bcc-Latn-x-com: ápdári
+Definitions: ['irrigation']
+
+
+lang=bcc: آپدان
+bcc-Latn-x-com: ápdán
+Definitions: ['water container', 'urinary bladder']
+
+
+lang=bcc: آپدَپ
+bcc-Latn-x-com: ápdap
+Definitions: ['waterside; the edge of or area adjoining a sea, lake, or river', 'timid; lacking courage and audacity']
+
+
+lang=bcc: آپدَر
+bcc-Latn-x-com: ápdar
+Definitions: ['a place with plenty of water']
+
+
+lang=bcc: آپدِرّ
+bcc-Latn-x-com: ápderr
+Definitions: ['gully; ravine; deep canyon; a cave created by the force of water']
+
+
+lang=bcc: آپدَرپ
+bcc-Latn-x-com: ápdarp
+Definitions: ['water pot; water container']
+
+
+lang=bcc: آپدَرَگ
+bcc-Latn-x-com: ápdarag
+Definitions: ['the gap between two rocks where there is water', 'the track made by the passage of water']
+
+
+lang=bcc: آپدُزّ
+bcc-Latn-x-com: ápdozz
+Definitions: ['the soil which absorbs a lot of water']
+
+
+lang=bcc: آپدَست
+bcc-Latn-x-com: ápdast
+Definitions: ['short toilet visit', '(of human beings) urination', '(of human being) urine']
+
+
+lang=bcc: آپراه
+bcc-Latn-x-com: ápráh
+Definitions: ['waterway; watercourse']
+
+
+lang=bcc: آپرَشت
+bcc-Latn-x-com: áprasht
+Definitions: ['wake; water wake; a mark on the surface of water by a fast boat or ship']
+
+
+lang=bcc: آپرَم
+bcc-Latn-x-com: ápram
+Definitions: ['complaisant; amenable; having a water-like nature to fit every pot']
+
+
+lang=bcc: آپرَنگ
+bcc-Latn-x-com: áprang
+Definitions: ['blue hue of water', 'watercolour']
+
+
+lang=bcc: آپرَوان
+bcc-Latn-x-com: áprawán
+Definitions: ['running water', 'a kind of fine and smooth scarf worn by women']
+
+
+lang=bcc: آپرین
+bcc-Latn-x-com: áprin
+Definitions: ['bravo; well done']
+
+
+lang=bcc: آپرێپ
+bcc-Latn-x-com: áprép
+Definitions: ['mirage']
+
+
+lang=bcc: آپرێچ
+bcc-Latn-x-com: ápréch
+Definitions: ['waterfall; cascade; a rapid flow of water in a low lying area', 'watershed', 'catchment area', 'slope', 'border; boundary', 'ebb; receding water in the sea or in a river']
+
+
+lang=bcc: آپُس
+bcc-Latn-x-com: ápos
+Definitions: ['(of animals) pregnant']
+
+
+lang=bcc: آپسار
+bcc-Latn-x-com: ápsár
+Definitions: ['a drink made from cold water and sour milk']
+
+
+lang=bcc: آپُستَگ
+bcc-Latn-x-com: ápostag
+Definitions: ['(of dark rainy clouds) expected to rain', '(of a soil) water-logged', '(of animals) pregnant; conceived']
+
+
+lang=bcc: آپسَر
+bcc-Latn-x-com: ápsar
+Definitions: ['headwater; source of stream', 'a place where water is available', 'stopover; station; a stopping place for a caravan', 'destination']
+
+
+lang=bcc: آپشان
+bcc-Latn-x-com: ápshán
+Definitions: ['waterfall; cascade']
+
+
+lang=bcc: آپِشک
+bcc-Latn-x-com: ápeshk
+Definitions: ['soup']
+
+
+lang=bcc: آپشُلوپ
+bcc-Latn-x-com: ápsholup
+Definitions: ['(of curry or stew) too watery']
+
+
+lang=bcc: آپشۆر
+bcc-Latn-x-com: ápshór
+Definitions: ['noise of running or falling water', 'all talk and no action; talking loud but without action']
+
+
+lang=bcc: آپکَپتَگ
+bcc-Latn-x-com: ápkaptag
+Definitions: ['having loose moral character; dishonoured']
+
+
+lang=bcc: آپکَشّ
+bcc-Latn-x-com: ápkassh
+Definitions: ['excessive thirst; the sense of everlasting thirst', 'an instrument used by cobblers to draw water from the leather', 'spillway (of a dam etc.)', 'well bucket; the bucket to draw water from a well or other source', 'water absorbent', 'water carrier; a person or animal that carries water', 'water carrying']
+
+
+lang=bcc: آپگَجّ
+bcc-Latn-x-com: ápgajj
+Definitions: ['water foam; the foam formed on the surface of a turbulent river water']
+
+
+lang=bcc: آپگَرد
+bcc-Latn-x-com: ápgard
+Definitions: ['whirlpool']
+
+
+lang=bcc: آپگْوَز
+bcc-Latn-x-com: ápgwaz
+Definitions: ['water channel']
+
+
+lang=bcc: آپَلۆ
+bcc-Latn-x-com: ápaló
+Definitions: ['watery; liquid']
+
+
+lang=bcc: آپمَلّ
+bcc-Latn-x-com: ápmall
+Definitions: ['the soil which was covered by rainwater or river water']
+
+
+lang=bcc: آپناک
+bcc-Latn-x-com: ápnák
+Definitions: ['water-like; watery', 'well-fed']
+
+
+lang=bcc: آپنِند
+bcc-Latn-x-com: ápnend
+Definitions: ['(of land) low lying where water accumulates']
+
+
+lang=bcc: آپوار
+bcc-Latn-x-com: ápwár
+Definitions: ['sufficiently watered (crop or soil)', '(of a person) temporarily settled in an area where he has no share in the land or water']
+
+
+lang=bcc: آپواری
+bcc-Latn-x-com: ápwári
+Definitions: [' drinking vessel; drinking glass; any pot used for drinking water or other liquid', 'settling temporarily in a place']
+
+
+lang=bcc: آپی
+bcc-Latn-x-com: ápi
+Definitions: ['cup-bearer', 'water carrier', 'aquatic']
+
+
+lang=bcc: آپی سِنگ
+bcc-Latn-x-com: ápi seng
+Definitions: ['smooth, hard stone in a river bed']

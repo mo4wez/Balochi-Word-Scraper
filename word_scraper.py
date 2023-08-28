@@ -1,38 +1,65 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from time import sleep
 import logging
-from site_path import SITE_PATH
-
-
 
 
 class WordScraperBot:
+    driver_path = '.\chromedriver\chromedriver.exe'
 
-    def __init__(self):
+    def __init__(self, base_url):
         self.driver = self._setup_driver()
-        self.driver_path = 'C:\Users\moawezz\Desktop\Upsaladic-Scrape\chromedriver\chromedriver.exe'
-        self.url = 'https://www.webonary.org/balochidictionary/browse/browse-vernacular/?letter=%D8%A7%D9%93&key=bcc'
+        self.base_url = base_url
     
     def run(self):
-
         # Configure logging
         logging.basicConfig(
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             level=logging.INFO)
-        self.driver.get(self.url)
-        
+        sleep(3)
 
+        self.driver.get(self.base_url)
+        sleep(4)
+        self.scrape_pages()
+
+        
     def _setup_driver(self):
         logging.info('Setting Up driver.')
-        # options = Options()
-        # options.add_argument("--headless=new")  # run in headless mode (without gui)
         driver = webdriver.Chrome(service=Service(executable_path=self.driver_path))
 
         return driver
+    
+
+    def scrape_pages(self):
+        while True:
+            self.extract_data_from_current_page()
+            
+            try:
+                next_button = self.driver.find_element(By.CSS_SELECTOR, 'li.active_page + li a')
+                if 'disabled' in next_button.get_attribute('class'):
+                    break
+                next_button.click()
+                sleep(2)
+            except:
+                print('ERROR: NO SUCH ELEMENT1')
+                pass
+                
+
+    
+    def extract_data_from_current_page(self):
+        entry_elements = self.driver.find_elements(By.CLASS_NAME, 'entry')
+        for entry_element in entry_elements:
+            lang_bcc_text = entry_element.find_element(By.CSS_SELECTOR, 'span[lang="bcc"]').text
+            lang_bcc_Latn_x_com_text = entry_element.find_element(By.CSS_SELECTOR, 'span[lang="bcc-Latn-x-com"]').text
+
+            definition_elements = entry_element.find_elements(By.CSS_SELECTOR, '.sensecontent .definition span[lang="en"]')
+            definitions = [def_element.text for def_element in definition_elements]
+
+            print("lang=bcc:", lang_bcc_text)
+            print("bcc-Latn-x-com:", lang_bcc_Latn_x_com_text)
+            print("Definitions:", definitions)
+            print("\n")
+            sleep(1)
