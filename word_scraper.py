@@ -1,37 +1,63 @@
+import sqlite3
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from time import sleep
-import logging
+from lets.letters import LETTERS
 
 
 class WordScraperBot:
     driver_path = '.\chromedriver\chromedriver.exe'
 
-    def __init__(self, base_url):
+    def __init__(self):
         self.driver = self._setup_driver()
-        self.base_url = base_url
+        self.base_url = 'https://www.webonary.org/balochidictionary/browse/browse-vernacular/?key=bcc&letter={}'
+        self.connect_to_database()
     
     def run(self):
-        # Configure logging
-        logging.basicConfig(
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            level=logging.INFO)
-        sleep(3)
-
-        self.driver.get(self.base_url)
         sleep(4)
+        self.create_table()
+        self.letter = input('Enter a letter: ')
+        self.driver.get(self.base_url.format(self.letter))
         self.scrape_pages()
 
-        
-    def _setup_driver(self):
-        logging.info('Setting Up driver.')
-        driver = webdriver.Chrome(service=Service(executable_path=self.driver_path))
+        self.conn.close()
 
+
+    def _setup_driver(self):
+        driver = webdriver.Chrome(service=Service(executable_path=self.driver_path))
         return driver
-    
+
+
+    def connect_to_database(self):
+        self.conn = sqlite3.connect('word_data.db')
+        self.cursor = self.conn.cursor()
+        print('Connected to db.')
+        
+
+    def create_table(self):
+        self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS word_data (
+                letter TEXT,
+                balochi TEXT,
+                latin TEXT,
+                definitions TEXT
+            )
+        ''')
+        
+        self.conn.commit()
+
+
+    def insert_data(self, balochi, latin, definitions):
+        self.cursor.execute('''
+            INSERT INTO word_data (letter, balochi, latin, definitions)
+            VALUES (?, ?, ?, ?)
+        ''', (self.letter, balochi, latin, ', '.join(definitions)))
+
+        self.conn.commit()
+
 
     def scrape_pages(self):
         while True:
@@ -45,21 +71,22 @@ class WordScraperBot:
                 sleep(2)
             except:
                 print('ERROR: NO SUCH ELEMENT1')
-                pass
+                self.driver.quit()
+                break
                 
 
-    
     def extract_data_from_current_page(self):
         entry_elements = self.driver.find_elements(By.CLASS_NAME, 'entry')
         for entry_element in entry_elements:
-            lang_bcc_text = entry_element.find_element(By.CSS_SELECTOR, 'span[lang="bcc"]').text
-            lang_bcc_Latn_x_com_text = entry_element.find_element(By.CSS_SELECTOR, 'span[lang="bcc-Latn-x-com"]').text
+            balochi = entry_element.find_element(By.CSS_SELECTOR, 'span[lang="bcc"]').text
+            latin = entry_element.find_element(By.CSS_SELECTOR, 'span[lang="bcc-Latn-x-com"]').text
 
             definition_elements = entry_element.find_elements(By.CSS_SELECTOR, '.sensecontent .definition span[lang="en"]')
             definitions = [def_element.text for def_element in definition_elements]
 
-            print("lang=bcc:", lang_bcc_text)
-            print("bcc-Latn-x-com:", lang_bcc_Latn_x_com_text)
+            print("balochi:", balochi)
+            print("latin:", latin)
             print("Definitions:", definitions)
             print("\n")
-            sleep(1)
+
+            self.insert_data(balochi, latin, definitions)
