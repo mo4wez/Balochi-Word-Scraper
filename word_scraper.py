@@ -90,3 +90,4 @@ class WordScraperBot:
             print("\n")
 
             self.insert_data(balochi, latin, definitions)
+            sleep(0.4)
